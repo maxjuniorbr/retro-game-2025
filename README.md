@@ -1,15 +1,18 @@
-# Retrospectiva gamificada 2025
+# Retrospectiva Gamificada 2025
 
-Retrospectiva gamificada do ano de 2025 para o time de Vendas Captacao, apresentada como uma jornada interativa (desktop e mobile).
+Retrospectiva de 2025 do **Squad Vendas Captação**, apresentada como uma jornada interativa.
+
+- **Desktop**: Plataforma side-scroller com personagem controlável.
+- **Mobile**: Vertical shooter touch-friendly.
 
 ## Stack
 
-- React
-- Vite
-- lucide-react
-- Tailwind CSS (CDN)
+- React + Vite
+- Tailwind CSS
+- Lucide Icons
+- Web Audio API (sons sintetizados)
 
-## Rodar localmente
+## Rodar Localmente
 
 ```bash
 npm install
