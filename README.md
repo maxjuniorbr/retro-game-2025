@@ -1,17 +1,17 @@
-# Retro Game 2025
+# Retrospectiva gamificada 2025
 
-Retrospectiva gamificada em React + Vite.
+Retrospectiva gamificada do ano de 2025 para o time de Vendas Captacao, apresentada como uma jornada interativa (desktop e mobile).
+
+## Stack
+
+- React
+- Vite
+- lucide-react
+- Tailwind CSS (CDN)
 
 ## Rodar localmente
 
 ```bash
 npm install
 npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-npm run preview
 ```

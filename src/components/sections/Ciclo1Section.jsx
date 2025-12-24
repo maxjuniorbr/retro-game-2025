@@ -1,6 +1,6 @@
 import React from 'react';
 import { Database } from 'lucide-react';
-import { GAME_DATA } from '../../data/gameData';
+import { RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA } from '../../data/retrospectivaGamificadaDesktopData';
 
 const Ciclo1Section = ({ playerX }) => {
   const isHeaderHovered = playerX > 2500 && playerX < 4500;
@@ -13,12 +13,12 @@ const Ciclo1Section = ({ playerX }) => {
       >
         <h2 className="text-4xl font-bold text-slate-800 flex items-center gap-3">
           <Database className="w-10 h-10 text-indigo-600" />
-          {GAME_DATA.ciclo1.title}
+          {RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.ciclo1.title}
         </h2>
-        <p className="text-slate-500">{GAME_DATA.ciclo1.subtitle}</p>
+        <p className="text-slate-500">{RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.ciclo1.subtitle}</p>
       </div>
       <div className="flex gap-20">
-        {GAME_DATA.ciclo1.items.map((item, idx) => {
+        {RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.ciclo1.items.map((item, idx) => {
           const myZoneX = 2600 + (idx * (256 + 80));
           const isHovered = playerX > myZoneX - 100 && playerX < myZoneX + 256 + 100;
 

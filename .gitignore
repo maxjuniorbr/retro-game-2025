@@ -3,6 +3,7 @@ node_modules
 .DS_Store
 .env
 .vite
+BOAS_PRATICAS.md
 
 # Logs
 npm-debug.log*

@@ -1,5 +1,5 @@
 import React from 'react';
-import { GAME_DATA } from '../../data/gameData';
+import { RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA } from '../../data/retrospectivaGamificadaDesktopData';
 
 const TimelineSection = ({ playerX }) => {
   const isHeaderHovered = playerX > 4600 && playerX < 7500;
@@ -14,7 +14,7 @@ const TimelineSection = ({ playerX }) => {
         <h2 className="text-4xl font-bold text-slate-800 mt-2">Linha do Tempo - Ciclo 2</h2>
       </div>
       <div className="flex items-end gap-0">
-        {GAME_DATA.timeline.map((item, idx) => {
+        {RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.timeline.map((item, idx) => {
           const myZoneX = 4700 + (idx * 300);
           const isHovered = playerX > myZoneX - 100 && playerX < myZoneX + 300 + 100;
 

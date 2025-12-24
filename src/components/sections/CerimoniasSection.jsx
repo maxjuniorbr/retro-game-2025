@@ -1,10 +1,10 @@
 import React from 'react';
 import { BarChart2, Calendar, Clock, Target } from 'lucide-react';
-import { GAME_DATA } from '../../data/gameData';
+import { RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA } from '../../data/retrospectivaGamificadaDesktopData';
 
 const CerimoniasSection = ({ playerX }) => {
-  const total = GAME_DATA.cerimonias.totalHours;
-  const breakdown = GAME_DATA.cerimonias.breakdown;
+  const total = RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.cerimonias.totalHours;
+  const breakdown = RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.cerimonias.breakdown;
   const getIcon = (icon) => {
     if (icon === 'calendar') return <Calendar className="w-5 h-5" />;
     if (icon === 'bar') return <BarChart2 className="w-5 h-5" />;

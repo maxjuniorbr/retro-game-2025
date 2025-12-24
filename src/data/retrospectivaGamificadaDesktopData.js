@@ -1,4 +1,4 @@
-export const GAME_DATA = {
+export const RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA = {
   hero: {
     title: "Retrospectiva 2025",
     subtitle: "Ciclo 2 • Julho - Dezembro",
@@ -8,11 +8,6 @@ export const GAME_DATA = {
       { label: "Cards Entregues", value: "120", icon: "box" },
       { label: "Stories de Valor", value: "36", icon: "star" },
       { label: "Tickets Resolvidos", value: "48", icon: "check" }
-    ],
-    highlights: [
-      "175 cards no Ciclo 1 (Jan-Jun)",
-      "295 cards no ano (C1 + C2)",
-      "68% de economia em infraestrutura após migração para Redis gerenciado"
     ]
   },
   cerimonias: {
@@ -119,46 +114,22 @@ export const GAME_DATA = {
     {
       title: "Pedido Expresso",
       subtitle: "17+ cards • Retirada rápida no ER para pedidos do App",
-      stats: ["Status: Pendente conferência", "Dashboard Grafana", "Onboarding + UX"],
-      bullets: [
-        "Novo status “Pendente conferência” para diferenciar pedidos aguardando retirada.",
-        "Monitoramento em tempo real com dashboard no Grafana.",
-        "Onboarding/tutoriais para operadores do ER.",
-        "Correções de UX: foco do leitor, scroll automático e mensagens de erro."
-      ]
+      stats: ["Status: Pendente conferência", "Dashboard Grafana", "Onboarding + UX"]
     },
     {
       title: "Migração Azure Managed Redis",
       subtitle: "Infraestrutura • 68% de economia em custos de servidor",
-      stats: ["68% de economia", "Alta disponibilidade", "Menor carga operacional"],
-      bullets: [
-        "Migração do Azure Cache for Redis + Réplica DR para Azure Managed Redis.",
-        "Alta disponibilidade e escalabilidade com menor carga operacional.",
-        "Economia de 68% em custos de infraestrutura após a migração.",
-        "Redução de custos sem perder estabilidade."
-      ]
+      stats: ["68% de economia", "Alta disponibilidade", "Menor carga operacional"]
     },
     {
       title: "Motor Transacional",
       subtitle: "12 cards • Análise de Risco e Fraude",
-      stats: ["CD por Estado", "Fila dedicada", "Repasse Backoffice"],
-      bullets: [
-        "Parametrização de CD por Estado e ajustes regionais.",
-        "Inversão de lógica de plano de pagamento.",
-        "Nova fila dedicada para controle de gargalos e rastreabilidade.",
-        "Repasse com documentação e sessões de knowledge transfer (Jan/2026)."
-      ]
+      stats: ["CD por Estado", "Fila dedicada", "Repasse Backoffice"]
     },
     {
       title: "Parcelamento por SKU (Performance)",
       subtitle: "Correção crítica • -85,6% de timeouts",
-      stats: ["85,6% menos erros", "P99 −50%", "2min → 7s"],
-      bullets: [
-        "Identificação e correção de gargalo crítico de performance no checkout.",
-        "Redução de 85,6% dos erros de timeout.",
-        "Melhoria de P99 em ~50%.",
-        "Casos críticos passaram de 2min para ~7s, reduzindo abandono."
-      ]
+      stats: ["85,6% menos erros", "P99 −50%", "2min → 7s"]
     }
   ],
   metricas: {
@@ -166,8 +137,6 @@ export const GAME_DATA = {
     leadTimeP85: "70,07",
     cycleTime: { value: "19,70", unit: "dias", label: "Cycle Time Média" },
     cycleTimeP85: "32,30",
-    previsibilidade: { value: "4,24", unit: "índice", label: "Previsibilidade (Meta < 5,6)" },
-    throughput: { value: "6-10", unit: "itens/mês", label: "Throughput" },
     quality: [
       { val: "19", label: "Bugs" },
       { val: "53", label: "Incidentes" },
@@ -176,7 +145,6 @@ export const GAME_DATA = {
     ]
   },
   impacto: {
-    highlight: "Impacto Total do Ciclo 2",
     cards: [
       { val: 120, label: "Cards Entregues C2" },
       { val: 16, label: "Stories de Negócio" },

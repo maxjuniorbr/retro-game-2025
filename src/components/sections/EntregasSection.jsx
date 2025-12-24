@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle, Clock, Shield, Trophy, Zap } from 'lucide-react';
-import { GAME_DATA } from '../../data/gameData';
+import { RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA } from '../../data/retrospectivaGamificadaDesktopData';
 
 const EntregasSection = ({ playerX }) => {
   const isHeaderHovered = playerX > 8100 && playerX < 10000;
@@ -15,7 +15,7 @@ const EntregasSection = ({ playerX }) => {
         <h2 className="text-4xl font-bold text-slate-800 mt-2">Principais Entregas</h2>
       </div>
       <div className="flex gap-32">
-        {GAME_DATA.entregas.map((entrega, idx) => {
+        {RETROSPECTIVA_GAMIFICADA_DESKTOP_DATA.entregas.map((entrega, idx) => {
           const myZoneX = 8200 + (idx * (320 + 128));
           const isHovered = playerX > myZoneX - 100 && playerX < myZoneX + 320 + 100;
 
